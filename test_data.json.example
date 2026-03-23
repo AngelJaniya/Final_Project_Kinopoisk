@@ -1,0 +1,10 @@
+{
+    "base_url_api": "https://api.poiskkino.dev/v1.4/",
+    "title_ru": "Ведьмак",
+    "title_en": "Witcher",
+    "title_num": "127",
+    "my_headers": {
+        "X-API-KEY": "ВАШ_ТОКЕН_ИЗ_ТЕЛЕГРАМ_БОТА",
+        "Content-Type": "application/json"
+    }
+}
