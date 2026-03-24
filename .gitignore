@@ -218,3 +218,4 @@ pycache/
 
 # Твой файл с токеном (уже добавили)
 test_data.json
+allure-result/
