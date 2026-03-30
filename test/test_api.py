@@ -38,3 +38,13 @@ class TestKinopoiskApi:
 
         with allure.step(f"Ожидаем ошибку 401 для '{title}'"):
             assert status_code == 401
+
+        @allure.story("Негативные проверки: Параметры")
+        def test_search_empty_query(self, api_client: FilmSeriesApi):
+            """Проверка поиска по пустой строке"""
+            body, status_code = api_client.search_film_by_name("")
+
+            with allure.step(
+                "Проверить, что сервер вернул статус код 200 или 400"
+            ):
+                assert status_code in [200, 400]
